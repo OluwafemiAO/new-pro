@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="dist/index.js" type="module"></script>
+  <style>
+    body{
+  background-color: rgb(255, 253, 253);
+  color:rgb(0, 0, 0);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+    }
+    input[type=text] {
+    padding:5px; 
+    border:2px solid hsl(207, 59%, 26%);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    align-content:flex-start;
+    }
+    button[type=submit] {
+    padding:8px 22px; 
+    background:rgb(255, 255, 255); 
+    color: hsl(207, 59%, 26%);
+    border:2px solid ;
+    cursor:pointer;
+    border-radius: 4px; 
+    }
+    .box-shadow {
+      font-family: cursive, sans-serif;
+      background-color: #ebe4e4;
+      color: hsl(207, 59%, 26%);
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow:2px 4px 20px 18px #575656;
+    }
+    h2 {
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      color:  hsl(207, 59%, 26%);
+      border:2px solid;
+      padding:5px 12px;
+      border-radius: 4px
+    }
+    #list {
+      list-style: none;
+      padding: 0;
+    }
+  </style>
+  <title>To Do List</title>
+  <div>
+    <h2>To-Do-List</h2>
+  </div>
+</head>
+<div class="box-shadow">
+<body>
+  <form id="new-task-form">
+    <input type="text" id="new-task-title">
+    <button type="Submit">Add</button>
+    <button id="removeTask" type="button">Remove</button>
+  </form>
+  <ul id="list"></ul>
+</body>
+</div>
+</html>
